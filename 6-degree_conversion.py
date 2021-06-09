@@ -1,5 +1,10 @@
+from typing import ValuesView
 
-C = int(input('Temperature in C?'))
-F = (C * 9/5) + 32
 
-print(str(F) + " F")
+try:
+    C = int(input('Temperature in C?'))
+    F = (C * 9/5) + 32
+
+    print(str(F) + " F")
+except ValueError:
+    print('thats not a number. ')
